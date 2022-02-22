@@ -2,62 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>music player</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XXXTENTACION</title>
     <!-- linking sass and css files -->
-    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/styles.css" />
     <!-- Boxicon -->
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <!-- Favicon  -->
+    <link rel="apple-touch-icon" sizes="57x57" href="media/Favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="media/Favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="media/Favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="media/Favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="media/Favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="media/Favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="media/Favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="media/Favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="media/Favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="media/Favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
-    <img src="./media/1.jpg" alt="" class="banner">
+    <img src="./media/wallpaper.jpeg" alt="banner" class="banner" />
     <div class="container">
         <!-- banner for animation -->
-        <img src="./media/1.jpg" alt="">
+        <img src="./media/unnamed.png" alt="" />
     </div>
     <!-- insert audio for playing -->
     <audio src="./media/XXXTENTACION A Remedy For A Broken Heart.mp3" controls id="music"></audio>
-
-    <label>artist name</label>
+    <!-- Label for artist name -->
+    <label>Artist Name</label>
+    <!-- Artist name -->
     <h3>XXXTENTACION</h3>
-
     <div class="iconbox">
-        <!-- pause icon -->
-        <i class='bx bx-pause' id='pause'></i>
         <!-- play icon -->
-        <i class='bx bx-play' id='play'></i>
+        <i class="bx bx-play" id="play"></i>
+        <!-- pause icon -->
+        <i class="bx bx-pause" id="pause"></i>
         <!-- reload icon -->
-        <i class='bx bx-reset' id='reload'></i>
+        <i class="bx bx-reset" id="reload"></i>
     </div>
 
     <!-- linking javascript files to this html file -->
-    <script>
-        let music = document.querySelector("music");
-        music = new Audio("../media/XXXTENTACION A Remedy For A Broken Heart.mp3");
-
-        let pause = document.querySelector("pause");
-        let reload = document.querySelector("reload");
-
-        // PLAY
-        let play = document.querySelector("#play");
-        play.addEventListener("click", function() {
-            // music.play();
-            console.log("music.play");
-        });
-        // PAUSE
-        let pause = document.querySelector("#pause");
-        pause.addEventListener("click", function() {
-            music.pause();
-        });
-        // RELOAD
-        let reload = document.querySelector("#reload");
-        reload.addEventListener("click", function() {
-            music.reload();
-            console.log("reload is clicked!");
-        });
+    <script src="js/app.js">
     </script>
 </body>
 
