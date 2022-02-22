@@ -8,10 +8,57 @@
     <title>music player</title>
     <!-- linking sass and css files -->
     <link rel="stylesheet" href="style/styles.css">
+    <!-- Boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
+    <img src="./media/1.jpg" alt="" class="banner">
+    <div class="container">
+        <!-- banner for animation -->
+        <img src="./media/1.jpg" alt="">
+    </div>
+    <!-- insert audio for playing -->
+    <audio src="./media/XXXTENTACION A Remedy For A Broken Heart.mp3" controls id="music"></audio>
 
+    <label>artist name</label>
+    <h3>XXXTENTACION</h3>
+
+    <div class="iconbox">
+        <!-- pause icon -->
+        <i class='bx bx-pause' id='pause'></i>
+        <!-- play icon -->
+        <i class='bx bx-play' id='play'></i>
+        <!-- reload icon -->
+        <i class='bx bx-reset' id='reload'></i>
+    </div>
+
+    <!-- linking javascript files to this html file -->
+    <script>
+        let music = document.querySelector("music");
+        music = new Audio("../media/XXXTENTACION A Remedy For A Broken Heart.mp3");
+
+        let pause = document.querySelector("pause");
+        let reload = document.querySelector("reload");
+
+        // PLAY
+        let play = document.querySelector("#play");
+        play.addEventListener("click", function() {
+            // music.play();
+            console.log("music.play");
+        });
+        // PAUSE
+        let pause = document.querySelector("#pause");
+        pause.addEventListener("click", function() {
+            music.pause();
+        });
+        // RELOAD
+        let reload = document.querySelector("#reload");
+        reload.addEventListener("click", function() {
+            music.reload();
+            console.log("reload is clicked!");
+        });
+    </script>
 </body>
 
 </html>
